@@ -1,7 +1,7 @@
 # Javascript Developer test
 
 One of our backend Ruby developers started working on a neat frontend for
-swapi.org with some simple things:
+[swapi.org][https://github.com/Helabs/swapi-graphql] with some simple things:
 * An index page with a list of the characters
 * A character page with some basic information, including a list of
     movies that character was in
