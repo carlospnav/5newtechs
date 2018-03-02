@@ -1,0 +1,33 @@
+{
+  "env": {
+    "development": {
+      "presets": "./babel-preset"
+    },
+    "production": {
+      "presets": "./babel-preset"
+    },
+    "test": {
+      "presets": [["env", { "modules": "commonjs" }], "./babel-preset"]
+    }
+  },
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "components": "./src/components",
+          "common": "./src/components/common",
+          "theme": "./theme",
+          "lib": "./src/lib",
+          "queries": "./src/queries",
+          "shims": "./src/shims",
+          "utils": "./src/utils"
+        }
+      },
+      "lodash",
+      "styled-components",
+      { "ssr": true, "displayName": true, "preprocess": false }
+    ]
+  ]
+}
