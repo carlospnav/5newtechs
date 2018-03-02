@@ -1,6 +1,6 @@
 # Javascript Developer test
 
-Welcome to the Ignus Javascript developer test!
+Explain better what's already done
 
 One of our backend Ruby developers started working on a neat frontend for
 swapi.org with some simple things:
@@ -9,19 +9,26 @@ swapi.org with some simple things:
     movies that character was in
 * A movie page with some basic info and a list of characters.
 
+The pages that already have data, but are not yet stylized are the first
+and second ones:
+* List of characters
+* Character detail page
 
 ## What you need to do:
-
-So far, only the first and second pages have been created with no
-styling whatsoever.
 
 Your tasks are to:
 * Create the movie page
 * Stylize everything according to the Zeplin project
 
-Each movie in the character page should link to the appropriate movie
-and each character in the movie page should be linked to the appropriate
+You do not need to create an index page for listing all the movies. The
+movies should be linked from the character details page. Each movie in the
+character page should link to the appropriate movie.
+
+Each character in the movie page should be linked to the appropriate
 character.
+
+We don't have images in the API, but considering there are only a few
+movies, grab your favorite posters from Google Images and use them.
 
 _Testing is also a requirement, so please test the components you create
 or reuse._
