@@ -1,7 +1,5 @@
 # Javascript Developer test
 
-Explain better what's already done
-
 One of our backend Ruby developers started working on a neat frontend for
 swapi.org with some simple things:
 * An index page with a list of the characters
