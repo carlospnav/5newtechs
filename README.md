@@ -15,6 +15,7 @@ and second ones:
 ## What you need to do:
 
 Your tasks are to:
+* Add a search box to filter characters in the main page
 * Create the movie page
 * Stylize everything according to the Zeplin project
 
