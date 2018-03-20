@@ -21,3 +21,26 @@ export function flexGroup(
     display: ${display};
   `
 }
+
+function imageProps(type){
+  return function (size){
+    const paths = {
+      bg: `bg-${size ? 'inside' : 'index'}`,
+      logo: `logo-${size ? 'small' : 'big'}`
+    }
+
+    const props = {
+      src: `/static/${type}/${paths[type]}.${type === 'logo' ? 'svg' : 'jpg'}`,
+    }
+
+    if (type === 'bg')
+      props['srcSet'] = `
+        /static/${type}/${paths[type]}@2x.jpg 2x, 
+        /static/${type}/${paths[type]}@3x.jpg 3x`;
+
+    return props;
+  }
+}
+
+export const bgProps = imageProps('bg');
+export const logoProps = imageProps('logo');

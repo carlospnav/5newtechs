@@ -6,10 +6,18 @@ import withUrlParam from "lib/withUrlParam"
 import { fetchPolicyList } from "lib/constants"
 import Link from "common/Link"
 import Spinner from "common/Spinner"
+import MainContainer from "./common/MainContainer";
+import Background from './common/background/Background';
+import Header from "./common/header/Header";
+import PageLogo from "./common/pageLogo/PageLogo";
 
 export function PersonDetail({ person, films, filmsCount }) {
   return (
-    <div>
+    <MainContainer>
+      <Header>
+        <PageLogo />
+      </Header>    
+      <Background small/>
       <h2>Details for {person.name}</h2>
       <ul>
         <li>Gender: {person.gender}</li>
@@ -30,7 +38,7 @@ export function PersonDetail({ person, films, filmsCount }) {
           <button>Retornar</button>
         </Link>
       </p>
-    </div>
+    </MainContainer>
   )
 }
 

@@ -5,6 +5,8 @@ import peopleQuery from "queries/people"
 import map from "lodash/map"
 import Link from "common/Link"
 import Spinner from "common/Spinner"
+import MainContainer from "./common/MainContainer";
+import Background from "./common/background/Background";
 
 const PeopleList = ({ items }) => {
   return (
@@ -28,4 +30,4 @@ export default compose(
   withProps(({ data: { allPeople: { people } } }) => ({
     items: people
   }))
-)(PeopleList)
+)(PeopleList);
