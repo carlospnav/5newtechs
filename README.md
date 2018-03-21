@@ -1,4 +1,4 @@
-# Javascript Developer test
+# JavaScript Developer Test
 
 One of our backend Ruby developers started working on a neat frontend for
 [swapi.org](https://github.com/Helabs/swapi-graphql) with some simple things:
@@ -39,5 +39,5 @@ or reuse._
     them.
 * Having it deployed over to Heroku would be nice as well.
 
-We are giving a two-week period to do this, but if you need more time
-*do not hesitate to ask*.
+You have a two-week period to do this, but if you need more time
+*do not hesitate to ask*. When you are finished you don't need to submit a PR, just send us an email and we will analyze your fork.
