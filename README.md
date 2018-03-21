@@ -1,7 +1,7 @@
 # Javascript Developer test
 
 One of our backend Ruby developers started working on a neat frontend for
-[swapi.org][https://github.com/Helabs/swapi-graphql] with some simple things:
+[swapi.org](https://github.com/Helabs/swapi-graphql) with some simple things:
 * An index page with a list of the characters
 * A character page with some basic information, including a list of
     movies that character was in
@@ -14,7 +14,7 @@ and second ones:
 
 ## What you need to do:
 
-Your tasks are to:
+You should **fork this repo** and complete the following tasks:
 * Add a search box to filter characters in the main page
 * Create the movie page
 * Stylize everything according to the Zeplin project
