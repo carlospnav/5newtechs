@@ -5,6 +5,6 @@ export default styled.div`
   ${flexGroup("column", null, "center")};
   padding: 0 30px;
   width: 100%;
-  background-color: black;
+  margin: 0 auto;
   z-index: 0;
 `

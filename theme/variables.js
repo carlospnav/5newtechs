@@ -1,5 +1,7 @@
 export default {
-  color: {},
+  color: {
+    borderColor: "#343434"
+  },
   font: {},
   fontWeight: {
     regular: 400,

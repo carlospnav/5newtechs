@@ -26,11 +26,12 @@ function imageProps(type){
   return function (size){
     const paths = {
       bg: `bg-${size ? 'inside' : 'index'}`,
-      logo: `logo-${size ? 'small' : 'big'}`
+      logo: `logo-${size ? 'small' : 'big'}`,
+      avatar: `icn-avatar-${size ? 'small' : 'big'}`
     }
 
     const props = {
-      src: `/static/${type}/${paths[type]}.${type === 'logo' ? 'svg' : 'jpg'}`,
+      src: `/static/${type}/${paths[type]}.${type === 'bg' ? 'jpg' : 'svg'}`,
     }
 
     if (type === 'bg')
@@ -44,3 +45,4 @@ function imageProps(type){
 
 export const bgProps = imageProps('bg');
 export const logoProps = imageProps('logo');
+export const avatarProps = imageProps('avatar');

@@ -13,6 +13,7 @@ injectGlobal`
     margin: 0;
     overflow-y: auto;
     width: 100%;
+    background-color: black;
   }
 
   * {
