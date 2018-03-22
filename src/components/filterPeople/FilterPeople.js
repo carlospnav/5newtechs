@@ -16,6 +16,15 @@ const Input = styled.input.attrs({
   padding-left: 20px;
   margin-bottom: 40px;
 `
+const SearchIcn = styled.img.attrs({
+  src: "/static/search/icn-search.svg",
+  alt: "Search Icon"
+})`
+  position: absolute;
+  right: 20px;
+  top: 16px;
+`
+
 const ErrorMessage = styled.p`
   color: white;
   text-align: center;
@@ -26,12 +35,14 @@ const ErrorMessage = styled.p`
 
 const Container = styled.div`
   ${flexGroup("column", "center", "center")}
+  position: relative;
 `
 
 export default function({error, onChange}){
   return(
     <Container>
       <Input onChange={onChange}/>
+      <SearchIcn />
       {error && <ErrorMessage>{error}</ErrorMessage> }
     </Container>
   )
