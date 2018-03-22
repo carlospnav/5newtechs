@@ -1,5 +1,6 @@
 # JavaScript Developer Test
 
+
 One of our backend Ruby developers started working on a neat frontend for
 [swapi.org](https://github.com/Helabs/swapi-graphql) with some simple things:
 * An index page with a list of the characters
@@ -41,3 +42,9 @@ or reuse._
 
 You have a two-week period to do this, but if you need more time
 *do not hesitate to ask*. When you are finished you don't need to submit a PR, just send us an email and we will analyze your fork.
+
+
+Please, do not open pull requests as your code becomes available to
+other users. *If you open a pull-request your fork will be deleted and
+you will be automatically disqualified.*
+
