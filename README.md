@@ -44,6 +44,6 @@ You have a two-week period to do this, but if you need more time
 *do not hesitate to ask*. When you are finished you don't need to submit a PR, just send us an email and we will analyze your fork.
 
 
-Please, do not open pull requests nor create a public repository as your code becomes available to
+Please, do not open pull requests nor create a public repository as your code will become available to
 other users. _If you open a pull-request or create a public repository your fork will be deleted and
 you will be automatically disqualified._
