@@ -8,15 +8,14 @@ import Background from "../src/components/common/background/Background";
 import PageLogo from "../src/components/common/pageLogo/PageLogo";
 import Header from '../src/components/common/header/Header';
 
-
 function PeoplePage({ url: { pathname } }) {
   return (
     <App>
       <MainContainer>
+        <Background />
         <Header main>
           <PageLogo />
         </Header>
-        <Background />
         <PeopleList />
       </MainContainer>
     </App>

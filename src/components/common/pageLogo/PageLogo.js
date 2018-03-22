@@ -8,6 +8,8 @@ const Img = styled.img.attrs({
 })`
   object-fit: contain;
   z-index: 1;
+  position: absolute;
+  top: 290px;
 `
 
 export default function({ small = false }) {

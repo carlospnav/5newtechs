@@ -2,7 +2,10 @@ export default {
   color: {
     borderColor: "#343434"
   },
-  font: {},
+  font: {
+    avatar: `'Roboto', sans-serif`,
+    error: `'Roboto', sans-serif`
+  },
   fontWeight: {
     regular: 400,
     semibold: 600,

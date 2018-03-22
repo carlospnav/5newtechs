@@ -2,9 +2,10 @@ import { flexGroup } from "theme/utils"
 import styled from "styled-components"
 
 const List = styled.div`
-  ${flexGroup("column")};
+  position: relative;
+  ${flexGroup("column", "center", "center")};
   padding: 0 20px;
-  max-width:  ${props => props.main ? "1200px" : "1200px"}
+  width:  ${props => props.main ? "1200px" : "1200px"}
 `
 
 export default function({main, children}){
