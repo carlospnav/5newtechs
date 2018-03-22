@@ -21,6 +21,7 @@ export default class MyDocument extends Document {
             content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
           />
           <title>Star Wars People</title>
+          <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,900" rel="stylesheet" />
           {styleTags}
         </Head>
         <body>

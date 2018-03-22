@@ -19,6 +19,7 @@ export default ComposedComponent => {
   return class WithData extends Component {
     static displayName = `WithData(${getDisplayName(ComposedComponent)})`
 
+
     static getInitialProps(ctx) {
       if (process.browser) {
         return {}
