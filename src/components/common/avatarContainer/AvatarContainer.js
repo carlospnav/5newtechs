@@ -9,7 +9,7 @@ const Name = styled.h2`
   font-size: 26px;
   font-weight: 300;
   color: white;
-  font-family: ${css.font.avatar};
+  font-family: ${css.font.roboto};
   margin: 30px 0 0 0;
 `
 const Container = styled.section`

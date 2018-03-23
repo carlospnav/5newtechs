@@ -20,6 +20,8 @@ export default gql`
         films {
           id
           title
+          episodeID
+          releaseDate
         }
       }
     }

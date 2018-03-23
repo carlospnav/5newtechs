@@ -1,7 +1,8 @@
 export default {
   color: {
     borderColor: "#343434",
-    sectionTitle: "#4e5760"
+    sectionTitle: "#4e5760",
+    link: "#007da9"
   },
   font: {
     roboto: `'Roboto', sans-serif`
