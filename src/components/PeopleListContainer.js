@@ -12,9 +12,7 @@ import ListContainer from "../components/common/ListContainer"
 
 const PeopleListContainer = ({ items }) => {
   return (
-    <ListContainer main>
-      <PeopleList people={items} />
-    </ListContainer>
+    <PeopleList people={items} />
   )
 }
 

@@ -1,7 +1,7 @@
 import { compose } from "recompose"
 import withData from "lib/withData"
 import App from "components/App"
-import PeopleList from "components/PeopleList"
+import PeopleListContainer from "components/PeopleListContainer"
 import withSetUrlParams from "lib/withSetUrlParams"
 import MainContainer from "../src/components/common/MainContainer";
 import Background from "../src/components/common/background/Background";
@@ -11,12 +11,12 @@ import Header from '../src/components/common/header/Header';
 function PeoplePage({ url: { pathname } }) {
   return (
     <App>
+      <Background />
+      <Header main>
+        <PageLogo />
+      </Header>
       <MainContainer>
-        <Background />
-        <Header main>
-          <PageLogo />
-        </Header>
-        <PeopleList />
+        <PeopleListContainer />
       </MainContainer>
     </App>
   )

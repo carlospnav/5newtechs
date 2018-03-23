@@ -9,8 +9,8 @@ const BgGradient = styled.div`
     position: absolute;
     left: 0; top: 0;
     width: 100%;
-    height: ${ props => props.small ? '200px' : '812px'}
-    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0) 70%, rgba(0,0,0,1) 100%);
+    height: ${ props => props.small ? '200px' : '812px'};
+    background: ${props => props.small ? "none" : "linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0) 70%, rgba(0,0,0,1) 100%)"}; 
   }
 `
 

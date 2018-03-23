@@ -29,7 +29,7 @@ const Name = styled.h2`
   color: #a0a9ab;
   font-size: 18px;
   font-weight: 300;
-  font-family: ${css.font.avatar};
+  font-family: ${css.font.roboto};
   margin: 30px 0 0 0;
   &:hover{ 
     font-weight: 900;
@@ -47,7 +47,7 @@ const PeopleList = ({onChange, filteredItems}) => {
           <List>
             {map(filteredItems, item => (
               <Item key={item.id}>
-                <Avatar main/>
+                <Avatar small/>
                 <Link route="person_detail" personId={item.id}>
                   <Name>{item.name}</Name>
                 </Link>
