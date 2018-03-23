@@ -15,6 +15,7 @@ const Name = styled.h2`
 const Container = styled.section`
   ${flexGroup("column", "center", "center")}
   padding: 40px;
+  margin-right: 20px;
 `
 
 export default function({name}) {

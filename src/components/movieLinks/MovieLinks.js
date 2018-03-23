@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import css from 'theme/variables'
+import { romanizeEpisodeNum } from "theme/utils"
 
 const Links = styled.ul`
   list-style-type: none;
@@ -12,6 +13,8 @@ const Li = styled.li`
   font-size: 18px;
   color: ${css.color.link};
   font-weight: 500;
+  letter-spacing: 0.7px;
+  margin-bottom: 20px;
 `
 
 export default function({films}){
@@ -20,7 +23,7 @@ export default function({films}){
     <Links>
       {films.map((film) => (
         <Li key={film.id}>
-          {film.title}
+          {`Star Wars: ${`Episode ${film.episodeID && romanizeEpisodeNum(film.episodeID)}`}: ${film.title} (${film.releaseDate.slice(0, 4) })`}
         </Li>
       ))}
     </Links>

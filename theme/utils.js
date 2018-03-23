@@ -22,6 +22,19 @@ export function flexGroup(
   `
 }
 
+export function romanizeEpisodeNum(num) {
+  const lookup = { X:10, IX:9, V:5, IV:4, I:1 };
+  let roman = '';
+
+  for ( let i in lookup ) {
+    while ( num >= lookup[i] ) {
+      roman += i;
+      num -= lookup[i];
+    }
+  }
+  return roman;
+}
+
 function imageProps(type){
   return function (size){
     const paths = {

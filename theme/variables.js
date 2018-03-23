@@ -8,7 +8,8 @@ export default {
     roboto: `'Roboto', sans-serif`
   },
   fontWeight: {
-    regular: 400,
+    light: 100,
+    regular: 300,
     semibold: 600,
     bold: 700
   },

@@ -4,7 +4,6 @@ import map from "lodash/map"
 import personQuery from "queries/person"
 import withUrlParam from "lib/withUrlParam"
 import { fetchPolicyList } from "lib/constants"
-import Link from "common/Link"
 import Spinner from "common/Spinner"
 import MainContainer from "./common/MainContainer";
 import AvatarContainer from "../components/common/avatarContainer/AvatarContainer"
@@ -15,9 +14,9 @@ import DetailsContainer from "../components/detailsContainer/DetailsContainer"
 import SectionTitle from "../components/common/sectionTitle/SectionTitle"
 import DetailsInfo from "../components/detailsInfo/DetailsInfo"
 import MovieLinks from "../components/movieLinks/MovieLinks"
+import ReturnButton from "../components/common/returnButton/ReturnButton"
 
 export function PersonDetail({ person, films, filmsCount }) {
-  console.log(person)
   return (
     <React.Fragment>
       <AvatarContainer name={person.name}/>
@@ -52,14 +51,8 @@ export function PersonDetail({ person, films, filmsCount }) {
   
         <SectionTitle>Films</SectionTitle>
         <MovieLinks films={films} />
-        {/* <ul>{map(films, film => <li key={film.id}>{film.title}</li>)}</ul>
-        <div>Total: {filmsCount} appearance(s)</div> */}
       </DetailsContainer>
-      <p>
-        <Link route="people">
-          <button>Retornar</button>
-        </Link>
-      </p>
+      <ReturnButton to="people"/>
     </React.Fragment>
   )
 }
