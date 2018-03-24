@@ -24,11 +24,11 @@ export function PersonDetail({ person, films, filmsCount }) {
         <DetailsInfo details={[
           {
             key:"Homeworld",
-            value: person.gender
+            value: person.homeworld.name
           },
           {
             key:"Gender",
-            value: person.homeworld.name
+            value: person.gender
           },
           {
             key:"Birth Year",
