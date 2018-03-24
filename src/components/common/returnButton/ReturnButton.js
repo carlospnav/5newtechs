@@ -1,10 +1,11 @@
 import styled from "styled-components"
 import Link from "common/Link"
 import css from "theme/variables"
+import { flexGroup } from "theme/utils"
 
 const ButtonContainer = styled.div`
   width: 100%;
-
+  ${flexGroup(null, "center")}
 `
 
 const Button = styled.button`

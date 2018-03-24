@@ -21,7 +21,6 @@ export function PersonDetail({ person, films, filmsCount }) {
     <React.Fragment>
       <AvatarContainer name={person.name}/>
       <DetailsContainer>
-        <SectionTitle>Details</SectionTitle>
         <DetailsInfo details={[
           {
             key:"Homeworld",
@@ -47,9 +46,7 @@ export function PersonDetail({ person, films, filmsCount }) {
             key:"Eye Color",
             value: person.eyeColor
           },
-        ]} />
-  
-        <SectionTitle>Films</SectionTitle>
+        ]} />  
         <MovieLinks films={films} />
       </DetailsContainer>
       <ReturnButton to="people"/>

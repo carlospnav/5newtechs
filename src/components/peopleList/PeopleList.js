@@ -28,11 +28,11 @@ const Item = styled.li`
 const Name = styled.h2`
   color: #a0a9ab;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: ${css.fontWeight.regular};
   font-family: ${css.font.roboto};
   margin: 30px 0 0 0;
   &:hover{ 
-    font-weight: 900;
+    font-weight: ${css.fontWeight.bold};
     cursor: pointer;
    }
 `
