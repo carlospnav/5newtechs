@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import css from 'theme/variables'
+import Link from "../common/Link"
 import { romanizeEpisodeNum } from "theme/utils"
 import SectionTitle from "../common/sectionTitle/SectionTitle"
 
@@ -17,20 +18,27 @@ const Li = styled.li`
   font-family: ${css.font.roboto};
   font-weight: ${css.fontWeight.regular};
   font-size: 18px;
-  color: ${css.color.link};
+  color: ${css.color.link} !important;
   letter-spacing: 0.7px;
   margin-bottom: 20px;
+`
+
+const SLink = styled(Link)`
+  margin: 40px;
 `
 
 export default function({films}){
   return (
     <Links>
       <SectionTitle>Films</SectionTitle>
-      {films.map((film) => (
+      {films.map((film) => { console.log(film);return(
         <Li key={film.id}>
-          {`Star Wars: ${`Episode ${film.episodeID && romanizeEpisodeNum(film.episodeID)}`}: ${film.title} (${film.releaseDate.slice(0, 4) })`}
+          <SLink route="movies" filmId={film.id} style={{color: css.color.link}}>
+            {`Star Wars: ${`Episode ${film.episodeID && romanizeEpisodeNum(film.episodeID)}`}: ${film.title} (${film.releaseDate.slice(0, 4) })`}
+          </SLink>
+
         </Li>
-      ))}
+      )})}
     </Links>
   )
 }
