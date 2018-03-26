@@ -1,8 +1,8 @@
 import styled from "styled-components"
 import css from 'theme/variables'
 import Link from "../common/Link"
-import { romanizeEpisodeNum } from "theme/utils"
 import SectionTitle from "../common/sectionTitle/SectionTitle"
+import { createFullEpisodeTitle } from "theme/utils";
 
 const Links = styled.ul`
   list-style-type: none;
@@ -31,14 +31,14 @@ export default function({films}){
   return (
     <Links>
       <SectionTitle>Films</SectionTitle>
-      {films.map((film) => { console.log(film);return(
+      {films.map((film) => (
         <Li key={film.id}>
           <SLink route="movies" filmId={film.id} style={{color: css.color.link}}>
-            {`Star Wars: ${`Episode ${film.episodeID && romanizeEpisodeNum(film.episodeID)}`}: ${film.title} (${film.releaseDate.slice(0, 4) })`}
+            {`${createFullEpisodeTitle(film.episodeID, film.title)} (${film.releaseDate.slice(0, 4) })`}
           </SLink>
 
         </Li>
-      )})}
+      ))}
     </Links>
   )
 }

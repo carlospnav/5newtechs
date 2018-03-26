@@ -22,7 +22,7 @@ export function flexGroup(
   `
 }
 
-export function romanizeEpisodeNum(num) {
+function romanizeEpisodeNum(num) {
   const lookup = { X:10, IX:9, V:5, IV:4, I:1 };
   let roman = '';
 
@@ -34,6 +34,11 @@ export function romanizeEpisodeNum(num) {
   }
   return roman;
 }
+
+export function createFullEpisodeTitle(episode, title){
+  return `Star Wars: ${`Episode ${episode && romanizeEpisodeNum(episode)}`}: ${title}`
+}
+
 
 function imageProps(type){
   return function (size){

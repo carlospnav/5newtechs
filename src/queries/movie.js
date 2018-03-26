@@ -11,6 +11,7 @@ export default gql`
       director
       characterConnection {
         characters{
+          id
           name
         }
       }

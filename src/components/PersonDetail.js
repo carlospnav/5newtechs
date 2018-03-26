@@ -16,7 +16,7 @@ import DetailsInfo from "../components/detailsInfo/DetailsInfo"
 import MovieLinks from "../components/movieLinks/MovieLinks"
 import ReturnButton from "../components/common/returnButton/ReturnButton"
 
-export function PersonDetail({ person, films, filmsCount }) { console.log(films)
+export function PersonDetail({ person, films, filmsCount }) {
   return (
     <React.Fragment>
       <AvatarContainer name={person.name}/>

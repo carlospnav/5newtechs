@@ -1,0 +1,48 @@
+import styled from "styled-components"
+import Avatar from "../avatar/Avatar"
+import Link from "../Link"
+import { flexGroup } from "theme/utils"
+import css from "theme/variables"
+import map from "lodash/map"
+
+const Item = styled.li`
+  ${flexGroup("column", "center", "center")};
+  border: 1px solid ${css.color.borderColor};
+  border-radius: 6px;
+  height: 260px;
+  width: 220px;
+  margin: 0 10px 20px 10px;
+`
+
+const List = styled.ul`
+  ${props => props.center ? flexGroup(null, "center") : flexGroup()};
+  flex-flow: row wrap;
+  padding: 0;
+  margin: 0;
+`
+const Name = styled.h2`
+  color: #a0a9ab;
+  font-size: 18px;
+  font-weight: ${css.fontWeight.regular};
+  font-family: ${css.font.roboto};
+  margin: 30px 0 0 0;
+  &:hover{ 
+    font-weight: ${css.fontWeight.bold};
+    cursor: pointer;
+   }
+`
+
+export default function({items, center}){
+  return(
+    <List center={center}>
+      {map(items, item => (
+              <Item key={item.id}>
+                <Avatar small/>
+                <Link route="person_detail" personId={item.id}>
+                  <Name>{item.name}</Name>
+                </Link>
+              </Item>
+            ))}
+    </List>
+  )
+}
