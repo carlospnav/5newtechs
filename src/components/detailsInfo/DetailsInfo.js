@@ -22,7 +22,8 @@ export default function({details}){
     <DetailsInfo>
       <SectionTitle>Details</SectionTitle>
       {details.map((item) => (
-        <Detail 
+        <Detail
+          key={`${item.key}${item.value}`} 
           value={item.value.toUpperCase()} 
           label={item.key} 
         />

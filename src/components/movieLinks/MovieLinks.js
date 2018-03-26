@@ -18,13 +18,16 @@ const Li = styled.li`
   font-family: ${css.font.roboto};
   font-weight: ${css.fontWeight.regular};
   font-size: 18px;
-  color: ${css.color.link} !important;
   letter-spacing: 0.7px;
   margin-bottom: 20px;
 `
 
 const SLink = styled(Link)`
   margin: 40px;
+`
+
+const ColoredLink = styled.a`
+  color: ${css.color.link};
 `
 
 export default function({films}){
@@ -34,7 +37,7 @@ export default function({films}){
       {films.map((film) => (
         <Li key={film.id}>
           <SLink route="movies" filmId={film.id} style={{color: css.color.link}}>
-            {`${createFullEpisodeTitle(film.episodeID, film.title)} (${film.releaseDate.slice(0, 4) })`}
+            <ColoredLink>{`${createFullEpisodeTitle(film.episodeID, film.title)} (${film.releaseDate.slice(0, 4) })`}</ColoredLink>
           </SLink>
 
         </Li>
