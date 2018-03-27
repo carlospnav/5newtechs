@@ -1,13 +1,13 @@
 import { compose } from "recompose"
-import App from "../src/components/App"
-import Movies from "../src/components/movies/Movies"
-import withData from "../src/lib/withData"
-import withSetUrlParams from "../src/lib/withSetUrlParams"
+import App from "components/App"
+import Movie from "components/movie/Movie"
+import withData from "lib/withData"
+import withSetUrlParams from "lib/withSetUrlParams"
 
 function MoviesPage({ url: { pathname } }){
   return (
     <App>
-      <Movies />
+      <Movie />
     </App>
   )
 }

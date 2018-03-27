@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import css from 'theme/variables'
-import Link from "../common/Link"
-import SectionTitle from "../common/sectionTitle/SectionTitle"
+import Link from "common/Link"
+import SectionTitle from "common/sectionTitle/SectionTitle"
 import { createFullEpisodeTitle } from "theme/utils";
 
 const Links = styled.ul`

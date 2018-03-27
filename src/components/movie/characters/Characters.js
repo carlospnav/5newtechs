@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import css from "theme/variables"
 import { flexGroup } from "theme/utils"
-import CharacterList from "../../common/characterList/CharacterList"
+import CharacterList from "common/characterList/CharacterList"
 
 const Characters =  styled.section`
   ${flexGroup()};

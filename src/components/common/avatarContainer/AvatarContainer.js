@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import css from "theme/variables"
 import { flexGroup } from "theme/utils"
-import Avatar from "../avatar/Avatar"
+import Avatar from "common/avatar/Avatar"
 
 
 const Name = styled.h2`

@@ -5,16 +5,16 @@ import personQuery from "queries/person"
 import withUrlParam from "lib/withUrlParam"
 import { fetchPolicyList } from "lib/constants"
 import Spinner from "common/Spinner"
-import MainContainer from "./common/MainContainer";
-import AvatarContainer from "../components/common/avatarContainer/AvatarContainer"
-import Background from './common/background/Background';
-import Header from "./common/header/Header";
-import PageLogo from "./common/pageLogo/PageLogo";
-import DetailsContainer from "../components/detailsContainer/DetailsContainer"
-import SectionTitle from "../components/common/sectionTitle/SectionTitle"
-import DetailsInfo from "../components/detailsInfo/DetailsInfo"
-import MovieLinks from "../components/movieLinks/MovieLinks"
-import ReturnButton from "../components/common/returnButton/ReturnButton"
+import MainContainer from "common/MainContainer";
+import AvatarContainer from "common/avatarContainer/AvatarContainer"
+import Background from 'common/background/Background';
+import Header from "common/header/Header";
+import PageLogo from "common/pageLogo/PageLogo";
+import DetailsContainer from "components/details/detailsContainer/DetailsContainer"
+import SectionTitle from "common/sectionTitle/SectionTitle"
+import DetailsInfo from "components/details/detailsInfo/DetailsInfo"
+import MovieLinks from "components/details/movieLinks/MovieLinks"
+import ReturnButton from "common/returnButton/ReturnButton"
 
 export function PersonDetail({ person, films, filmsCount }) {
   return (

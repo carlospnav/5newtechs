@@ -1,8 +1,8 @@
 import styled from "styled-components"
-import Detail from "./Detail"
+import Detail from "common/detail/Detail"
 import { flexGroup } from "theme/utils"
 import css from "theme/variables"
-import SectionTitle from "../common/sectionTitle/SectionTitle"
+import SectionTitle from "common/sectionTitle/SectionTitle"
 
 
 const DetailsInfo = styled.article`

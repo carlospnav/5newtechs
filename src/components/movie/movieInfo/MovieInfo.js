@@ -1,10 +1,10 @@
 import styled from "styled-components"
 import { flexGroup } from "theme/utils"
-import { createFullEpisodeTitle } from "../../../../theme/utils";
-import SectionTitle from "../../common/sectionTitle/SectionTitle"
-import Detail from "../../detailsInfo/Detail"
-import Content from "../../common/contentText/ContentText" 
-import Title from "../../common/detailTitle/DetailTitle"
+import { createFullEpisodeTitle } from "theme/utils";
+import SectionTitle from "common/sectionTitle/SectionTitle"
+import Detail from "common/detail/Detail"
+import Content from "common/contentText/ContentText" 
+import Title from "common/detailTitle/DetailTitle"
 
 const Section = styled.section`
   ${flexGroup()};

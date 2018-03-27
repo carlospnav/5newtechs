@@ -1,6 +1,6 @@
 import styled from "styled-components"
-import Avatar from "../avatar/Avatar"
-import Link from "../Link"
+import Avatar from "common/avatar/Avatar"
+import Link from "common/Link"
 import { flexGroup } from "theme/utils"
 import css from "theme/variables"
 import map from "lodash/map"

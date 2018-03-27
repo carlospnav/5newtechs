@@ -3,9 +3,9 @@ import { branch, compose, withProps, renderComponent } from "recompose"
 import { fetchPolicyList } from "lib/constants"
 import peopleQuery from "queries/people"
 import Spinner from "common/Spinner"
-import PeopleList from "../components/peopleList/PeopleList";
-import FilterPeople from "../components/filterPeople/FilterPeople"
-import ListContainer from "../components/common/ListContainer"
+import PeopleList from "components/people/peopleList/PeopleList";
+import FilterPeople from "components/people/filterPeople/FilterPeople"
+import ListContainer from "components/common/ListContainer"
 
 
 
