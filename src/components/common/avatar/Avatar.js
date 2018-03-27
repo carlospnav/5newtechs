@@ -1,15 +1,18 @@
 import styled from 'styled-components';
 import { avatarProps } from 'theme/utils';
 
-const Img = styled.img.attrs({
+/* Avatar Component - Renders a small or large
+  avatar image based on the small prop passed to it.
+*/
+let componentProps;
+
+export default styled.img.attrs({
+  initProps: props => {
+    componentProps = avatarProps(props.small)
+  },
+  src: props => componentProps.src,
   width: props => props.small ? '140px' : '300px',
   height: props => props.small ? '132.6px' : '283px'
 })`
   object-fit: contain;
 `
-export default function({ small = false }) {
-
-  return (
-    <Img {...avatarProps(small)} small={small}/>
-  )
-}
