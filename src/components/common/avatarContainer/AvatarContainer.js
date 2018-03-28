@@ -3,8 +3,10 @@ import css from "theme/variables"
 import { flexGroup } from "theme/utils"
 import Avatar from "common/avatar/Avatar"
 
-
-const Name = styled.h2`
+/*Container for the Avatar component rendered
+  with a name. 
+*/
+export const Name = styled.h2`
   color: #a0a9ab;
   font-size: 26px;
   font-weight: ${css.fontWeight.regular};
