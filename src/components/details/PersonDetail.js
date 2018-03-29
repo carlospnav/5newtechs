@@ -1,17 +1,11 @@
 import { graphql } from "react-apollo"
 import { branch, compose, withProps, renderComponent } from "recompose"
-import map from "lodash/map"
 import personQuery from "queries/person"
 import withUrlParam from "lib/withUrlParam"
 import { fetchPolicyList } from "lib/constants"
 import Spinner from "common/Spinner"
-import MainContainer from "common/MainContainer";
 import AvatarContainer from "common/avatarContainer/AvatarContainer"
-import Background from 'common/background/Background';
-import Header from "common/header/Header";
-import PageLogo from "common/pageLogo/PageLogo";
 import DetailsContainer from "components/details/detailsContainer/DetailsContainer"
-import SectionTitle from "common/sectionTitle/SectionTitle"
 import DetailsInfo from "components/details/detailsInfo/DetailsInfo"
 import MovieLinks from "components/details/movieLinks/MovieLinks"
 import ReturnButton from "common/returnButton/ReturnButton"

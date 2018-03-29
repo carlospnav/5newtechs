@@ -21,7 +21,7 @@ export default function({details}){
   return(
     <DetailsInfo>
       <SectionTitle>Details</SectionTitle>
-      {details.map((item) => (
+      {details && details.map((item) => (
         <Detail
           key={`${item.key}${item.value}`} 
           value={item.value.toUpperCase()} 

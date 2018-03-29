@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import css from "theme/variables"
 
-const Value = styled.h2`
+export const Value = styled.h2`
   font-family: ${css.font.roboto};
   font-size: 22px;
   font-weight: ${css.fontWeight.regular};
@@ -10,7 +10,7 @@ const Value = styled.h2`
   color: white;
   margin: 0;
 `
-const Label = styled.h4`
+export const Label = styled.h4`
   font-family: ${css.font.roboto};
   font-size: 14px;
   font-weight: ${css.fontWeight.regular};
@@ -19,16 +19,33 @@ const Label = styled.h4`
   letter-spacing: 0.5px;
 `
 
-const Detail = styled.div`
-  ${props => !props.spaced && `width: 130px;`}
-  ${props => props.spaced ? `margin-right: 20px;` : `margin-bottom: 10px;`}
+export const SpacedDetail = styled.div`
+  margin-right: 20px;
+`
+export const RegularDetail = styled.div`
+  width: 130px;
+  margin-bottom: 10px;
 `
 
 export default function({spaced, value, label}){ 
+  const valueContent = (
+    <Value>{value.toUpperCase()}</Value> 
+  )
+  const labelContent = ( 
+    <Label>{label}</Label>
+  )
+
   return (
-    <Detail spaced={spaced}>
-      <Value>{value.toUpperCase()}</Value>
-      <Label>{label}</Label>
-    </Detail>
+    spaced ? (
+      <SpacedDetail>
+        {valueContent}
+        {labelContent}
+      </SpacedDetail>
+    ) : (
+      <RegularDetail>
+        {valueContent}
+        {labelContent}
+      </RegularDetail>
+    )
   )
 }

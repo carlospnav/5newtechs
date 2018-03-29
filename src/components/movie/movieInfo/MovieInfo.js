@@ -6,7 +6,7 @@ import Detail from "common/detail/Detail"
 import Content from "common/contentText/ContentText" 
 import Title from "common/detailTitle/DetailTitle"
 
-const Section = styled.section`
+export const Section = styled.section`
   ${flexGroup()};
   flex-wrap: wrap;
   width: 60%;
@@ -16,10 +16,10 @@ const Section = styled.section`
     width: 60%;
   }
 `
-const AdjustedTitle = styled(Title)`
+export const AdjustedTitle = styled(Title)`
   margin: 0;
 `
-const AdjustedSectionTitle = styled(SectionTitle)`
+export const AdjustedSectionTitle = styled(SectionTitle)`
   margin: 0;
 `
 

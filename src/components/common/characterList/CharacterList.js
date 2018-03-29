@@ -15,11 +15,18 @@ const Item = styled.li`
 `
 
 const List = styled.ul`
-  ${props => props.center ? flexGroup(null, "center") : flexGroup()};
   flex-flow: row wrap;
   padding: 0;
   margin: 0;
 `
+export const CenterList = styled(List)`
+  ${flexGroup(null, "center")};
+`
+
+export const LeftList = styled(List)`
+  ${flexGroup()};
+`
+
 const Name = styled.h2`
   color: #a0a9ab;
   font-size: 18px;
@@ -33,16 +40,24 @@ const Name = styled.h2`
 `
 
 export default function({items, center}){
+  const content = map(items, item => (
+    <Item key={item.id}>
+      <Avatar small/>
+      <Link route="person_detail" personId={item.id}>
+        <Name>{item.name}</Name>
+      </Link>
+    </Item>
+  ))
+
   return(
-    <List center={center}>
-      {map(items, item => (
-              <Item key={item.id}>
-                <Avatar small/>
-                <Link route="person_detail" personId={item.id}>
-                  <Name>{item.name}</Name>
-                </Link>
-              </Item>
-            ))}
-    </List>
+    center ? (
+      <CenterList>
+        {content}
+      </CenterList>
+    ) : (
+      <LeftList>
+        {content}
+      </LeftList>
+    )
   )
 }

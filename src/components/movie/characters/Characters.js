@@ -13,7 +13,7 @@ const Characters =  styled.section`
   }
 `
 
-const Title = styled.h2`
+export const Title = styled.h2`
   width: 100%;
   font-family: ${css.font.roboto};
   font-size: 22px;

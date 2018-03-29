@@ -8,7 +8,7 @@ const ButtonContainer = styled.div`
   ${flexGroup(null, "center")}
 `
 
-const Button = styled.button`
+export const Button = styled.button`
   border: 1px solid ${css.color.borderColor};
   background: none;
   font-family: ${css.font.roboto};
