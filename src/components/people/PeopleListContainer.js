@@ -5,7 +5,7 @@ import peopleQuery from "queries/people"
 import Spinner from "common/Spinner"
 import PeopleList from "components/people/peopleList/PeopleList";
 import FilterPeople from "components/people/filterPeople/FilterPeople"
-import ListContainer from "components/common/ListContainer"
+import ListContainer from "common/listContainer/ListContainer"
 
 
 

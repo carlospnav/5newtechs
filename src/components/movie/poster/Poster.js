@@ -10,14 +10,11 @@ const Poster = styled.div`
     justify-content: flex-start;
   }
 `
-const PosterImg = styled.img`
-
-`
 
 export default function({episode}){
   return (
     <Poster>
-      <PosterImg src={`/static/poster/episode${episode}.jpg`} alt="Movie Poster" />
+      <img src={`/static/poster/episode${episode}.jpg`} alt="Movie Poster" />
     </Poster>
   )
 }

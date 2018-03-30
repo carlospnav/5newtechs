@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MainContainer> should render a detailed MainContainer properly. 1`] = `
+.c0 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 1120px;
+  margin: 80px auto;
+  z-index: 0;
+}
+
+@media (min-width:600) {
+  .c0 {
+    padding: 0 30px;
+  }
+}
+
+<main
+  className="c0"
+/>
+`;
+
+exports[`<MainContainer> should render a regular MainContainer properly. 1`] = `
+.c0 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: null;
+  -webkit-justify-content: null;
+  -ms-flex-pack: null;
+  justify-content: null;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  max-width: 1120px;
+  margin: 0 auto;
+  z-index: 0;
+}
+
+<main
+  className="c0"
+/>
+`;
