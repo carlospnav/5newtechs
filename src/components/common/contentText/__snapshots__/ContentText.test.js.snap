@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContentText> Should render a ContentText properly. 1`] = `
+.c0 {
+  font-family: 'Roboto',sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  -webkit-letter-spacing: 0.7px;
+  -moz-letter-spacing: 0.7px;
+  -ms-letter-spacing: 0.7px;
+  letter-spacing: 0.7px;
+  color: #4e5760;
+}
+
+<p
+  className="c0"
+/>
+`;

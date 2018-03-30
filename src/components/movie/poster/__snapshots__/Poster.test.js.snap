@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Poster> should render a Poster properly. 1`] = `
+.c0 {
+  width: 60%;
+  -webkit-flex-direction: null;
+  -ms-flex-direction: null;
+  flex-direction: null;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width:1000px) {
+  .c0 {
+    width: 40%;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+<div
+  className="c0"
+>
+  <img
+    alt="Movie Poster"
+    src="/static/poster/episode3.jpg"
+  />
+</div>
+`;

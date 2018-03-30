@@ -1,7 +1,7 @@
 import { shallow } from "enzyme"
 import MovieLinks, { Film, SLink, ColoredLink } from "./MovieLinks"
 import SectionTitle from "components/common/sectionTitle/SectionTitle"
-import { films } from "lib/__tests__/mockData"
+import { films } from "lib/mockData"
 
 describe("<MovieLinks>", () => {
   let wrapper;

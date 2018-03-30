@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SectionTitle> should render a SectionTitle properly. 1`] = `
+.c0 {
+  font-family: 'Roboto',sans-serif;
+  color: #4e5760;
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+<h4
+  className="c0"
+/>
+`;

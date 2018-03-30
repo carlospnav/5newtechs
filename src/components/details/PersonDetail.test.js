@@ -5,7 +5,7 @@ import DetailsContainer from "components/details/detailsContainer/DetailsContain
 import DetailsInfo from "components/details/detailsInfo/DetailsInfo"
 import MovieLinks from "components/details/movieLinks/MovieLinks"
 import ReturnButton from "components/common/returnButton/ReturnButton"
-import { films, person } from "lib/__tests__/mockData"
+import { films, person } from "lib/mockData"
 
 describe("<PersonDetail>", () => {
   let wrapper;

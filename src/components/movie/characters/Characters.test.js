@@ -1,7 +1,7 @@
 import { shallow } from "enzyme"
 import Characters, { Title } from "./Characters"
 import CharacterList from "common/characterList/CharacterList"
-import { people } from "lib/__tests__/mockData"
+import { people } from "lib/mockData"
 
 describe("<PersonDetail>", () => {
   let wrapper;

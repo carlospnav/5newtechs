@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DetailsContainer> should render a DetailsContainer properly. 1`] = `
+.c0 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: null;
+  -webkit-justify-content: null;
+  -ms-flex-pack: null;
+  justify-content: null;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  padding: 40px 60px;
+  width: 100%;
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    padding: 25px 10px;
+  }
+}
+
+<section
+  className="c0"
+>
+  <p>
+    Containereeee!
+  </p>
+</section>
+`;

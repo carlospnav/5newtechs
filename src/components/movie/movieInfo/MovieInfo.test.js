@@ -1,6 +1,6 @@
 import { shallow } from "enzyme"
 import MovieInfo, { AdjustedTitle, AdjustedSectionTitle, Section } from "./MovieInfo"
-import { film } from "lib/__tests__/mockData"
+import { film } from "lib/mockData"
 import ContentText from "common/contentText/ContentText"
 import Detail from "common/detail/Detail"
 
