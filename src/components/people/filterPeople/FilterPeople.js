@@ -1,9 +1,11 @@
 import styled from "styled-components"
 import css from "theme/variables"
 import { flexGroup } from "theme/utils"
+import ErrorMessage from "common/errorMessage/ErrorMessage"
+import SearchIcn from "common/searchIcon/SearchIcon"
 
 
-const Input = styled.input.attrs({
+export const Input = styled.input.attrs({
   type: "text",
   placeholder: "Find your character"
 })`
@@ -18,6 +20,7 @@ const Input = styled.input.attrs({
   background-color: black;
   padding-left: 20px;
   margin: 0 20px 40px 20px;
+  color: white;
  
   &::placeholder{
     color: white;
@@ -26,26 +29,6 @@ const Input = styled.input.attrs({
   @media (min-width: 500px){
     width: 460px;
   }
-`
-const SearchIcn = styled.img.attrs({
-  src: "/static/search/icn-search.svg",
-  alt: "Search Icon"
-})`
-  position: absolute;
-  right: 20px;
-  top: 16px;
-
-  @media (min-width: 500px){
-    right: 40px;
-  }
-`
-
-const ErrorMessage = styled.p`
-  color: white;
-  text-align: center;
-  max-width: 300px;
-  margin: 0 0 200px 0;
-  font-family: ${css.font.error};
 `
 
 const Container = styled.div`

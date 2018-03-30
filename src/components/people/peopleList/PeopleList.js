@@ -1,9 +1,8 @@
 import { compose, withState, withProps, withHandlers } from 'recompose'
-import styled from 'styled-components'
 import FilterPeople from "components/people/filterPeople/FilterPeople"
-import CharacterList from "components/common/characterList/CharacterList"
+import CharacterList from "common/characterList/CharacterList"
 
-const PeopleList = ({onChange, filteredItems}) => {
+export const PeopleList = ({onChange, filteredItems}) => {
   let error = filteredItems.length === 0 ? "It appears our system failed to locate the person you are looking for. Maybe try Hoth?" : false  
 
   return (

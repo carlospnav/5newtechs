@@ -3,7 +3,8 @@ export default {
     borderColor: "#343434",
     sectionTitle: "#4e5760",
     link: "#007da9",
-    blueTitle: "#9fc7ef"
+    blueTitle: "#9fc7ef",
+    valencia: "#D74B4B"
   },
   font: {
     roboto: `'Roboto', sans-serif`

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchIcon> should render a SearchIcon properly. 1`] = `
+.c0 {
+  position: absolute;
+  right: 20px;
+  top: 16px;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    right: 40px;
+  }
+}
+
+<img
+  alt="Search Icon"
+  className="c0"
+  src="/static/search/icn-search.svg"
+/>
+`;

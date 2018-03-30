@@ -4,13 +4,8 @@ import { fetchPolicyList } from "lib/constants"
 import peopleQuery from "queries/people"
 import Spinner from "common/Spinner"
 import PeopleList from "components/people/peopleList/PeopleList";
-import FilterPeople from "components/people/filterPeople/FilterPeople"
-import ListContainer from "common/listContainer/ListContainer"
 
-
-
-
-const PeopleListContainer = ({ items }) => {
+export const PeopleListContainer = ({ items }) => {
   return (
     <PeopleList people={items} />
   )
