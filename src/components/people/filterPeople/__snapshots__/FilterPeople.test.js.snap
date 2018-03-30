@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FilterPeople> should render a FilterPeople component with an error message properly. 1`] = `
+.c0 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  <styled.input />
+  <styled.img />
+  <styled.span>
+    There was an error!
+  </styled.span>
+</div>
+`;
+
+exports[`<FilterPeople> should render a FilterPeople component with no errors properly. 1`] = `
+.c0 {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+<div
+  className="c0"
+>
+  <styled.input />
+  <styled.img />
+</div>
+`;
+
+exports[`<FilterPeople> should render the Input component defined in its file properly. 1`] = `
+.c0 {
+  font-family: 'Roboto',sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  -webkit-letter-spacing: 0.7px;
+  -moz-letter-spacing: 0.7px;
+  -ms-letter-spacing: 0.7px;
+  letter-spacing: 0.7px;
+  height: 50px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #818181;
+  background-color: black;
+  padding-left: 20px;
+  margin: 0 20px 40px 20px;
+  color: white;
+}
+
+.c0::-webkit-input-placeholder {
+  color: white;
+}
+
+.c0::-moz-placeholder {
+  color: white;
+}
+
+.c0:-ms-input-placeholder {
+  color: white;
+}
+
+.c0::placeholder {
+  color: white;
+}
+
+@media (min-width:500px) {
+  .c0 {
+    width: 460px;
+  }
+}
+
+<input
+  className="c0"
+  placeholder="Find your character"
+  type="text"
+/>
+`;
