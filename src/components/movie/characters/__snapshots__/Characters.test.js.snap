@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PersonDetail> renders a characters list properly. 1`] = `
+.c0 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+@media (min-width:1000px) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+<section
+  className="c0"
+>
+  <styled.h2>
+    Characters
+  </styled.h2>
+  <Component
+    items={
+      Array [
+        Object {
+          "birthYear": "1001",
+          "eyeColor": "Black",
+          "gender": "Male",
+          "hairColor": "White",
+          "homeworld": Object {
+            "name": "Hoth",
+          },
+          "name": "Tauntaun",
+          "skinColor": "White",
+        },
+        Object {
+          "birthYear": "0000",
+          "eyeColor": "Redish",
+          "gender": "Neutral",
+          "hairColor": "Translucent",
+          "homeworld": Object {
+            "name": "Imperial Blaster",
+          },
+          "name": "Stormtrooper's stray blaster shot",
+          "skinColor": "Translucent",
+        },
+      ]
+    }
+  />
+</section>
+`;
+
+exports[`<PersonDetail> renders the Title component properly. 1`] = `
+.c0 {
+  width: 100%;
+  font-family: 'Roboto',sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  -webkit-letter-spacing: 0.8px;
+  -moz-letter-spacing: 0.8px;
+  -ms-letter-spacing: 0.8px;
+  letter-spacing: 0.8px;
+  color: #9fc7ef;
+  margin: 40px 10px;
+}
+
+<h2
+  className="c0"
+>
+  Characters
+</h2>
+`;

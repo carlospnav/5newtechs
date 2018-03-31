@@ -38,19 +38,3 @@ function romanizeEpisodeNum(num) {
 export function createFullEpisodeTitle(episode, title){
   return `Star Wars: ${`Episode ${episode && romanizeEpisodeNum(episode)}`}: ${title}`
 }
-
-
-function imageProps(type){
-  return function (size){
-    const paths = {
-      avatar: `icn-avatar-${size ? 'small' : 'big'}`
-    }
-
-    const props = {
-      src: `/static/${type}/${paths[type]}.svg`,
-    }
-    return props;
-  }
-}
-
-export const avatarProps = imageProps('avatar');

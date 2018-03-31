@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Detail> renders a regular detail component if 'spaced' is NOT passed as props 1`] = `
+.c1 {
+  font-family: 'Roboto',sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  text-align: left;
+  -webkit-letter-spacing: 0.8px;
+  -moz-letter-spacing: 0.8px;
+  -ms-letter-spacing: 0.8px;
+  letter-spacing: 0.8px;
+  color: white;
+  margin: 0;
+}
+
+.c2 {
+  font-family: 'Roboto',sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #4e5760;
+  margin: 0;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+}
+
+.c0 {
+  width: 130px;
+  margin-bottom: 10px;
+}
+
+<styled.div>
+  <div
+    className="c0"
+  >
+    <styled.h2>
+      <h2
+        className="c1"
+      >
+        VALOR
+      </h2>
+    </styled.h2>
+    <styled.h4>
+      <h4
+        className="c2"
+      >
+        Label
+      </h4>
+    </styled.h4>
+  </div>
+</styled.div>
+`;
+
+exports[`<Detail> renders a spaced detail component if 'spaced' is passed as props 1`] = `
+.c1 {
+  font-family: 'Roboto',sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  text-align: left;
+  -webkit-letter-spacing: 0.8px;
+  -moz-letter-spacing: 0.8px;
+  -ms-letter-spacing: 0.8px;
+  letter-spacing: 0.8px;
+  color: white;
+  margin: 0;
+}
+
+.c2 {
+  font-family: 'Roboto',sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #4e5760;
+  margin: 0;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+}
+
+.c0 {
+  margin-right: 20px;
+}
+
+<styled.div>
+  <div
+    className="c0"
+  >
+    <styled.h2>
+      <h2
+        className="c1"
+      >
+        VALOR
+      </h2>
+    </styled.h2>
+    <styled.h4>
+      <h4
+        className="c2"
+      >
+        Label
+      </h4>
+    </styled.h4>
+  </div>
+</styled.div>
+`;

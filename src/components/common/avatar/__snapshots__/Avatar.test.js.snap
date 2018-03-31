@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar renders a small Avatar if 'small' props is passed as true. 1`] = `
+.c0 {
+  object-fit: contain;
+}
+
+<img
+  className="c0"
+  height="132.6px"
+  src="/static/avatar/icn-avatar-small.svg"
+  width="140px"
+/>
+`;
+
+exports[`Avatar renders a small Avatar if 'small' props is passed as true. 2`] = `
+.c0 {
+  object-fit: contain;
+}
+
+<img
+  className="c0"
+  height="283px"
+  src="/static/avatar/icn-avatar-big.svg"
+  width="300px"
+/>
+`;

@@ -19,8 +19,6 @@ function PersonDetailPage({ url: { pathname } }) {
         <PersonDetail />
       </MainContainer>
     </App>
-
-
   )
 }
 

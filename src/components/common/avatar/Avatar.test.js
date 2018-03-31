@@ -1,58 +1,25 @@
-import React from "react"
-import { mount } from "enzyme"
-import Avatar from "./Avatar"
-
-
-const avatar = (small = false) => {
-  return mount(<Avatar small={small}/>)
-}
-
-function removePx(value){
-  return value.slice(0, value.length - 2);
-}
-
-function fishPathforSmall(path){
-  return path.slice(0, )
-}
+import { shallow } from "enzyme"
+import Avatar, { SmallImg, BigImg } from "./Avatar"
+import "jest-styled-components"
 
 describe("Avatar", () =>{
   let wrapper;    
-  let img;
 
-  afterEach(() => {
-    if (wrapper)
-      wrapper.unmount();
+  const avatar = () => {
+    wrapper = shallow(<Avatar small={true}/>)
+  }
+
+  beforeEach(avatar)
+  afterEach(() => wrapper = undefined)
+
+  it("renders a small Avatar if 'small' props is passed as true.", () => {
+    expect(wrapper.find(SmallImg)).toHaveLength(1)
+    expect(wrapper.find(SmallImg).dive().dive()).toMatchSnapshot()
   })
 
-  it("always renders an image tag", () => {
-    wrapper = avatar();
-    img = wrapper.find("img");
-    expect(img.length).toBe(1)
-  })
-})
-
-describe("Avatar when passed 'small' as props", () => {
-  let bigWrapper, smallWrapper;
-  let bigImg, smallImg;
-
-  beforeEach(() => {
-    bigWrapper = avatar();
-    smallWrapper = avatar(true);
-    bigImg = bigWrapper.find("img");
-    smallImg = smallWrapper.find("img");
-  })
-
-  afterEach(() => {
-    bigWrapper.unmount();
-    smallWrapper.unmount();
-  })
-  
-  it("Renders a smaller version of the image tag", () => {
-    expect(Number(removePx(bigImg.props().width)))
-      .toBeGreaterThan(Number(removePx(smallImg.props().width)))
-  })
-
-  it("renders an image with the 'small' suffix appended to the end of it", () => {
-    expect(smallImg.props().src).toBe("/static/avatar/icn-avatar-small.svg")
+  it("renders a small Avatar if 'small' props is passed as true.", () => {
+    wrapper.setProps({small: false})
+    expect(wrapper.find(BigImg)).toHaveLength(1)
+    expect(wrapper.find(BigImg).dive().dive()).toMatchSnapshot()
   })
 })

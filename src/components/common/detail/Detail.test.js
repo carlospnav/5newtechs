@@ -1,12 +1,13 @@
 import React from "react"
-import { shallow } from "enzyme"
+import { mount } from "enzyme"
 import Detail, { Value, Label, SpacedDetail, RegularDetail } from "./Detail"
+import "jest-styled-components"
 
 describe("<Detail>", () => {
   let wrapper;
 
   function detail(){
-    wrapper = shallow(<Detail spaced={true} value="Valor" label="Label"/>)
+    wrapper = mount(<Detail spaced={true} value="Valor" label="Label"/>)
   }
 
   beforeEach(detail)
@@ -14,14 +15,19 @@ describe("<Detail>", () => {
   afterEach(() => wrapper = undefined)
 
   it("renders a spaced detail component if 'spaced' is passed as props", () => {
-    expect(wrapper.find(SpacedDetail)).toHaveLength(1)
+    expect(wrapper.find(SpacedDetail)).toMatchSnapshot()
   })
 
-  it("renders a Value component with value props as UPPERCASED text.", () => {
-    expect(wrapper.find(Value).dive().text()).toEqual("VALOR")
+  it("renders a regular detail component if 'spaced' is NOT passed as props", () => {
+    wrapper.setProps({ spaced: false})
+    expect(wrapper.find(RegularDetail)).toMatchSnapshot()
   })
 
   it("renders a Label component with label props as text.", () => {
-    expect(wrapper.find(Label).dive().text()).toEqual("Label")
+    expect(wrapper.find(Label).text()).toEqual("Label")
+  })
+
+  it("renders a Value component with value props as UPPERCASED text.", () => {
+    expect(wrapper.find(Value).text()).toEqual("VALOR")
   })
 })
