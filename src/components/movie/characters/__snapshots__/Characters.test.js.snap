@@ -47,6 +47,7 @@ exports[`<PersonDetail> renders a characters list properly. 1`] = `
             "name": "Hoth",
           },
           "name": "Tauntaun",
+          "personId": "1",
           "skinColor": "White",
         },
         Object {
@@ -58,6 +59,7 @@ exports[`<PersonDetail> renders a characters list properly. 1`] = `
             "name": "Imperial Blaster",
           },
           "name": "Stormtrooper's stray blaster shot",
+          "personId": "2",
           "skinColor": "Translucent",
         },
       ]

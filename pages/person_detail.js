@@ -8,7 +8,7 @@ import Header from "common/header/Header"
 import PageLogo from "common/pageLogo/PageLogo"
 import PersonDetail from "components/details/PersonDetail"
 
-function PersonDetailPage({ url: { pathname } }) {
+export function PersonDetailPage({ url: { pathname } }) {
   return (
     <App>
       <Background small/>

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<people> should render the proper component tree as expected. 1`] = `
+<Component>
+  <Component />
+  <styled.header
+    main={true}
+  >
+    <Component />
+  </styled.header>
+  <styled.main>
+    <Apollo(branch(withProps(PeopleListContainer))) />
+  </styled.main>
+</Component>
+`;

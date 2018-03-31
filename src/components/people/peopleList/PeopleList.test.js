@@ -1,40 +1,38 @@
-import { shallow } from "enzyme"
-import { PeopleList } from "./PeopleList"
-import FilterPeople from "../filterPeople/FilterPeople"
-import CharacterList from "common/characterList/CharacterList"
-import { people } from "lib/mockData"
+import { mount } from "enzyme"
+import { enhance, PeopleList } from "./PeopleList"
+import { people, person } from "lib/mockData"
 
-/* Since I can expect withHandler, withState and withProps to work properly
-I figured I just needed to make sure the function used as callback to start
-the chain of events that leads to the filter action was being correctly passed
-on to the Filter component. */
+
+/*Testing only whether the filter created is functioning as it should. Errors
+with the Filter component and the character list are tested in their own files. */
 describe("PeopleList", () =>{
-  let wrapper;    
-  const mockFn = jest.fn()
+  let wrapper;
+  const MockPeopleList = ({onChange, filteredItems}) => (
+    <PeopleList onChange={onChange} filteredItems={filteredItems}>
+      <p>Test.</p>
+    </PeopleList>
+  )
+  
+  const MockPeopleListEnhanced = enhance(MockPeopleList)    
 
   function peopleList(){
-    wrapper = shallow(<PeopleList onChange={mockFn} filteredItems={people} />)
+    wrapper = mount(<MockPeopleListEnhanced  people={people} />)
   }
 
   beforeEach(peopleList)
-  afterEach(() => wrapper = undefined )
+  afterEach(() => wrapper.unmount() )
 
-  it("passes withHandler function on to the filter component.", () => {
-    expect(wrapper.find(FilterPeople).prop("onChange")).toEqual(mockFn)
+  it("should render a PeopleList component with all elements passed as 'people'.", () => {
+    expect(wrapper.find(PeopleList).prop("filteredItems")).toEqual(people)
+  })
+  
+  it("should render a filtered PeopleList component with a subset of elements passed as 'people' if onChange is called with a filter.", () => {
+    wrapper.find("input").simulate("change", { target: { value: "Ta" } })
+    expect(wrapper.find(PeopleList).prop("filteredItems")).toEqual([person])
   })
 
-  it("renders FilterPeople with an errorMessage if filteredItems is empty.", () =>{
-    wrapper.setProps({filteredItems: []})
-    expect(wrapper.find(FilterPeople).prop("error")).toEqual("It appears our system failed to locate the person you are looking for. Maybe try Hoth?")
-  })
-
-  it("does not render CharacterList if filteredItems is empty.", () =>{
-    wrapper.setProps({filteredItems: []})
-    expect(wrapper.find(CharacterList)).toHaveLength(0)
-  })
-
-  it("renders CharacterList component with the filteredItems and center props.", () => {
-    expect(wrapper.find(CharacterList).prop("items")).toEqual(people)
-    expect(wrapper.find(CharacterList).prop("center")).toEqual(true)
+  it("should render a filtered PeopleList component with a subset of elements passed as 'people' if onChange is called with a filter.", () => {
+    wrapper.find("input").simulate("change", { target: { value: "Ta" } })
+    expect(wrapper.find(PeopleList).prop("filteredItems")).toEqual([person])
   })
 })

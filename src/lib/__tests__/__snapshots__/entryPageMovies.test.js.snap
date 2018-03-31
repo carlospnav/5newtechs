@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<movies> should render the proper component tree as expected. 1`] = `
+<Component>
+  <Connect(Apollo(branch(withProps(Movies)))) />
+</Component>
+`;

@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MockData film should match the snapshot 1`] = `
+Object {
+  "content": "Damn you, openingCrawl!",
+  "director": "Michael Bay",
+  "episodeID": 1,
+  "id": "1",
+  "release": "2009",
+  "title": "A First Hope Returns Wars",
+}
+`;
+
+exports[`MockData films should match the snapshot 1`] = `
+Array [
+  Object {
+    "episodeID": 1,
+    "id": "1",
+    "releaseDate": "2010",
+    "title": "A New Hope",
+  },
+  Object {
+    "episodeID": 2,
+    "id": "2",
+    "releaseDate": "2011",
+    "title": "A First Hope",
+  },
+  Object {
+    "episodeID": 3,
+    "id": "3",
+    "releaseDate": "2012",
+    "title": "A Last Hope",
+  },
+]
+`;
+
+exports[`MockData people should match the snapshot 1`] = `
+Array [
+  Object {
+    "birthYear": "1001",
+    "eyeColor": "Black",
+    "gender": "Male",
+    "hairColor": "White",
+    "homeworld": Object {
+      "name": "Hoth",
+    },
+    "name": "Tauntaun",
+    "personId": "1",
+    "skinColor": "White",
+  },
+  Object {
+    "birthYear": "0000",
+    "eyeColor": "Redish",
+    "gender": "Neutral",
+    "hairColor": "Translucent",
+    "homeworld": Object {
+      "name": "Imperial Blaster",
+    },
+    "name": "Stormtrooper's stray blaster shot",
+    "personId": "2",
+    "skinColor": "Translucent",
+  },
+]
+`;
+
+exports[`MockData person should match the snapshot 1`] = `
+Object {
+  "birthYear": "1001",
+  "eyeColor": "Black",
+  "gender": "Male",
+  "hairColor": "White",
+  "homeworld": Object {
+    "name": "Hoth",
+  },
+  "name": "Tauntaun",
+  "personId": "1",
+  "skinColor": "White",
+}
+`;

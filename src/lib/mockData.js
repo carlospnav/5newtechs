@@ -29,6 +29,7 @@ export const film = {
 }
 
 export const person = {
+  personId:"1",
   name: "Tauntaun",
   homeworld: {
     name: "Hoth"
@@ -42,6 +43,7 @@ export const person = {
 
 export const people = [
   {
+    personId:"1",
     name: "Tauntaun",
     homeworld: {
       name: "Hoth"
@@ -53,6 +55,7 @@ export const people = [
     eyeColor: "Black"
   },
   {
+    personId:"2",
     name: "Stormtrooper's stray blaster shot",
     homeworld: {
       name: "Imperial Blaster"

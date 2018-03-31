@@ -8,7 +8,7 @@ import Background from "common/background/Background";
 import PageLogo from "common/pageLogo/PageLogo";
 import Header from 'common/header/Header';
 
-function PeoplePage({ url: { pathname } }) {
+export function PeoplePage({ url: { pathname } }) {
   return (
     <App>
       <Background />
