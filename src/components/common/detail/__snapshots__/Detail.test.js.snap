@@ -91,7 +91,7 @@ exports[`<Detail> renders a spaced detail component if 'spaced' is passed as pro
       <h2
         className="c1"
       >
-        VALOR
+        Valor
       </h2>
     </styled.h2>
     <styled.h4>

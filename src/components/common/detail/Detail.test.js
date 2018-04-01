@@ -23,11 +23,16 @@ describe("<Detail>", () => {
     expect(wrapper.find(RegularDetail)).toMatchSnapshot()
   })
 
+  it("renders a Value component with value props as UPPERCASED text if component is NOT SPACED.", () => {
+    wrapper.setProps({ spaced: false})
+    expect(wrapper.find(Value).text()).toEqual("VALOR")
+  })
+
   it("renders a Label component with label props as text.", () => {
     expect(wrapper.find(Label).text()).toEqual("Label")
   })
 
-  it("renders a Value component with value props as UPPERCASED text.", () => {
-    expect(wrapper.find(Value).text()).toEqual("VALOR")
+  it("renders a Value component with value props as text.", () => {
+    expect(wrapper.find(Value).text()).toEqual("Valor")
   })
 })

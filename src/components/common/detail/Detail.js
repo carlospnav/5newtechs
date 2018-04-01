@@ -29,7 +29,7 @@ export const RegularDetail = styled.div`
 
 export default function({spaced, value, label}){ 
   const valueContent = (
-    <Value>{value.toUpperCase()}</Value> 
+    <Value>{spaced ? value : value.toUpperCase()}</Value> 
   )
   const labelContent = ( 
     <Label>{label}</Label>
