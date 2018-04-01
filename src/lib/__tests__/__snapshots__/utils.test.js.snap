@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`flexGroup should return a proper column flex item template string. 1`] = `
+"
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+  "
+`;
+
+exports[`flexGroup should return a proper row flex item template string 1`] = `
+"
+    flex-direction: null;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  "
+`;
+
+exports[`media should return a proper template string with the extra CSS rules provided 1`] = `
+Array [
+  "
+    @media (max-width: 1280px) {
+      ",
+  "
+      height: 200px;
+      width: 100px;",
+  "
+    }
+  ",
+]
+`;
+
+exports[`media should return a proper template string with the extra CSS rules provided 2`] = `
+Array [
+  "
+    @media (max-width: 1280px) {
+      ",
+  "
+      height: 290px;
+      width: 170px;
+      background: #FFFFFF",
+  "
+    }
+  ",
+]
+`;

@@ -3,7 +3,7 @@ import { css } from "styled-components"
 export const media = {
   desktop: (...args) => css`
     @media (max-width: 1280px) {
-      ${css(...args)};
+      ${css(...args)}
     }
   `
 }
@@ -22,9 +22,12 @@ export function flexGroup(
   `
 }
 
-function romanizeEpisodeNum(num) {
+export function romanizeEpisodeNum(num) {
   const lookup = { X:10, IX:9, V:5, IV:4, I:1 };
   let roman = '';
+
+  if (isNaN(Number(num)))
+    return "Num could not be romanized. Are you sure num is a number?"
 
   for ( let i in lookup ) {
     while ( num >= lookup[i] ) {
@@ -36,5 +39,8 @@ function romanizeEpisodeNum(num) {
 }
 
 export function createFullEpisodeTitle(episode, title){
-  return `Star Wars: ${`Episode ${episode && romanizeEpisodeNum(episode)}`}: ${title}`
+  if (episode !== undefined && isNaN(Number(episode)) || !title){
+    return "Oops. Could not create the title with the information provided. It's a trap!"
+  }
+  return `Star Wars:${episode ? ` Episode ${romanizeEpisodeNum(episode)}` : ""}: ${title}`
 }
